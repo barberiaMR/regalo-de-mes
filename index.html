@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Aniversario ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Elementos decorativos animados de fondo -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <main class="app-container">
+    
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <h1 class="main-title">nuestro propio reloj</h1>
+      <p class="subtitle">Cada segundo a tu lado es mi momento favorito ✨</p>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL (3 Columnas en PC, 1 Columna en Celular) -->
+    <div class="content-grid">
+
+      <!-- TARJETA 1: RELOJ / CONTADOR -->
+      <section class="card counter-card">
+        <div class="clock-icon">⌛</div>
+        <h2>Tiempo Juntos</h2>
+        <div class="counter-display">
+          <div class="time-unit">
+            <span id="days">0</span>
+            <label>Días</label>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <span id="hours">0</span>
+            <label>Horas</label>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <span id="minutes">0</span>
+            <label>Mins</label>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <span id="seconds">0</span>
+            <label>Segs</label>
+          </div>
+        </div>
+        <p class="anniversary-date">Desde el 26 de Mayo de 2026 ❤️</p>
+      </section>
+
+      <!-- TARJETA 2: GALERÍA DE FOTOS -->
+      <section class="card gallery-card">
+        <h2>Nuestros Momentos</h2>
+        <div class="polaroid-stack">
+          <div class="polaroid polaroid-1">
+            <img src="foto1.jpg" alt="Foto 1" onerror="this.src='https://via.placeholder.com/300x300/fbebe8/b38e5d?text=Nuestra+Foto+1'">
+            <p>Donde todo empezó ✨</p>
+          </div>
+          <div class="polaroid polaroid-2">
+            <img src="foto2.jpg" alt="Foto 2" onerror="this.src='https://via.placeholder.com/300x300/fbebe8/b38e5d?text=Nuestra+Foto+2'">
+            <p>Una tarde inolvidable ☕</p>
+          </div>
+          <div class="polaroid polaroid-3">
+            <img src="foto3.jpg" alt="Foto 3" onerror="this.src='https://via.placeholder.com/300x300/fbebe8/b38e5d?text=Nuestra+Foto+3'">
+            <p>Simplemente juntos 🥰</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARJETA 3: CARTA INTERACTIVA -->
+      <section class="card letter-card">
+        <div class="envelope-wrapper">
+          <div class="envelope">
+            <div class="wax-seal">❤️</div>
+            <h3>Para Mi Persona Favorita</h3>
+            <p class="preview-text">Tengo algo especial que decirte...</p>
+            <button class="open-letter-btn" id="open-letter-btn">Leer carta completa ✉️</button>
+          </div>
+        </div>
+
+        <!-- Ventana Modal para leer la carta -->
+        <div class="modal" id="letter-modal">
+          <div class="modal-content">
+            <span class="close-btn" id="close-modal-btn">&times;</span>
+            <h2 class="letter-title">Mi Amor,</h2>
+            <div class="letter-body">
+              <p>Quería hacerte algo diferente y pensado únicamente para vos, para que recuerdes siempre lo mucho que significás en mi vida.</p>
+              <br>
+              <p>Gracias por acompañarme en cada momento, por tus risas, por tu cariño y por hacer que cada día desde ese 26 de mayo sea especial.</p>
+              <br>
+              <p>Te amo con todo mi corazón.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>Hecho con todo mi amor para vos ❤️</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
